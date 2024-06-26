@@ -1,0 +1,104 @@
+:root {
+  --color-primary: #008009;
+  --color-secondary: #275243;
+  --color-dark: #151f1b;
+  --color-light: #f4f4f4;
+}
+
+@font-face {
+  font-family: 'Inter';
+  src: url('Inter-Variable.ttf') format('truetype');
+}
+
+html, body {
+	margin: 0;
+	height: 100%;
+  box-sizing: border-box;
+}
+
+body {
+	font-family: 'Inter', 'Arial', sans-serif;
+	background-color: var(--color-secondary);
+	color: var(--color-light);
+	font-size: 16px;
+	background-image:
+    linear-gradient(191deg, #F4F26921 0%, transparent 75%),
+    linear-gradient(311deg, #0E218A6B 0%, transparent 75%);
+	background-size: 100% 100%;
+  background-attachment: fixed;
+}
+
+main {
+  padding: 1em;
+  max-width: 980px;
+  margin: auto;
+}
+
+
+.logo {
+	width: 2em;
+	border-radius: 999px;
+	margin: auto;
+	display: inline;
+  vertical-align: middle;
+}
+
+h1 {
+	margin: 0;
+	padding: 1em;
+	background: #1b1b1b;
+	font-weight: 400;
+	color: var(--color-light);
+}
+
+h2 {
+  margin-top: 2em;
+}
+
+section {
+  display: flex;
+  gap: 1em;
+  flex-wrap: wrap;
+}
+
+@media (max-width: 1000px) {
+  section {
+    justify-content: space-around;
+  }
+}
+
+article {
+  position: relative;
+	background: var(--color-light);
+	border-radius: 8px;
+	overflow: hidden;
+	width: 300px;
+  color: var(--color-dark);
+  line-height: 1.4;
+}
+
+p {
+	margin-top: 0;
+}
+
+article img {
+	height: 200px;
+	width: 100%;
+	object-fit: cover;
+}
+
+article h3 {
+	padding: 0 1em;
+  margin: 0;
+	color: var(--color-light);
+	background: linear-gradient(0deg, var(--color-dark), transparent 50%);
+	height: 200px;
+  line-height: 350px;
+  width: 100%;
+	position: absolute;
+	top: 0;
+}
+
+article div {
+  padding: 1em;
+}
