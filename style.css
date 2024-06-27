@@ -102,3 +102,11 @@ article h3 {
 article div {
   padding: 1em;
 }
+
+a {
+	color: var(--color-primary);
+}
+
+a + a {
+	margin-left: 0.5em;
+}
